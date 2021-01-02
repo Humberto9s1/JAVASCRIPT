@@ -2,12 +2,18 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var bonus; /*varial global poder ser vista dentro e fora da funçao*/
             function calcularDiaria(salario,dias) {
+                
+                bonus = 300; 
+                
+                /*var bonus = 300; 
+                variavel local só pode ser vista dentro da finção  */
                 return (salario/dias).toFixed(2);    
             }
             
             var diaria = calcularDiaria(8000,30);
-            alert(diaria);
+            alert("Diaria: "+diaria+", Bônus: "+bonus);
         </script>
     </head>
     <body>
