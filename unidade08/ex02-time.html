@@ -2,7 +2,25 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            var agora = new Date();
+
+            function setDoisDigitos(tempo) {
+                if (tempo < 10){
+                    return "0" + tempo;
+                }else{
+                    return tempo;
+                }
+            }
+
+            var horas = setDoisDigitos(agora.getHours());
+            var minutos = setDoisDigitos(agora.getMinutes());
+            var segundos = setDoisDigitos(agora.getSeconds());
+
+            console.log("Horas: "+horas+":"+minutos+":"+segundos);
+
+            //data completa com dia, mês, ano, hora, minuto e segundo.
+            //var aniversario = new Date(1991,10,1,23,20,30);
+
         </script>
     </head>
     <body>
