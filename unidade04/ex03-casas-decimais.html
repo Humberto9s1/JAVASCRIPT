@@ -2,7 +2,15 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            function calcularDiaria() {
+                /*return Math.round(2000/30);  Arrendo 66.66666 vira 67*/
+                /*return Math.ceil(2000/30); sempre Arrendonda para cima 66.66666 vira 67 */
+                /*return Math.floor(2000/30); sempre Arrendonda para baixo 66.66666 vira 67 */
+                return (2000/30).toFixed(2); /* Formata para a quantidade de casas decimais desejadas */
+            }
 
+            var diaria = calcularDiaria();
+            alert(diaria);
         </script>
     </head>
     <body>
