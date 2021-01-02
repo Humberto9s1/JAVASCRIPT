@@ -2,8 +2,22 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var agora = new Date();
+            var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho",
+                            "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
 
-            
+            var ano = agora.getFullYear();
+            var mes = meses[agora.getMonth()]; // retorna de 0 a 11, sendo 0 janneiro
+            //Para mostrar o nome do mÊs, é necessário a criação de um array com o nome dos meses
+            var dia = agora.getDate();
+
+            //console.log(dia+" de "+mes+" de "+ano);
+
+            var aniversario =  new Date(1991,10,1);
+            var dia_da_semana = ["Seg","Ter","Qua","Qui","Sex","Sab","Dom"];
+            dia_da_semana = dia_da_semana[aniversario.getDay()];
+            console.log(dia_da_semana);
+
         </script>
     </head>
     <body>
