@@ -2,11 +2,30 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            var salada = new Array();
-            salada[0] = "Uva";
-            salada[1] = "Mamão";
-            salada[2] = "Pêra";
-            salada[3] = "Maçã";        
+
+            //Para ordenar em ordem numerica é necessario a criação desta função
+            function ordenarNumeros(a,b){
+                return a-b;
+            }
+
+            var megasena = new Array(43,10,3,2,1,59);
+
+            megasena.sort(ordenarNumeros); //Ordenando em ordem numerica
+
+            console.log(megasena);
+
+            // var salada = new Array();
+            // salada[0] = "Uva";
+            // salada[1] = "Mamão";
+            // salada[2] = "Pêra";
+            // salada[3] = "Maçã";   
+            
+            // salada.push("Abacate"); //Adicionando elemento
+
+            // salada.sort(); //Ordenando em ordem alfabética
+
+            // console.log(salada);
+
         </script>
     </head>
     <body>
